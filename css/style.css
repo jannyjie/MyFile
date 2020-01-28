@@ -1,0 +1,163 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "微軟正黑體", "Microsoft JhengHei"," Noto Sans CJK","Xingothic TC","Droid Sans Fallback","PingFang TC","Heiti TC","LiHei Pro","Arial","Helvetica","sans-serif","PMingLiU";
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  position: relative;
+}
+main{
+  position: relative;
+}
+
+/*-----------------------NAV 導覽頁-------------------------*/
+nav {
+    width: 100%;
+    background: #fff;
+    border-bottom: solid 1px #9999;
+    position: relative;
+}
+.nav-bar{
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+.nav-bar .logo {
+    width: 300px;
+}
+.nav-bar .logo img{
+  width: 275px;
+  height: 41px;
+}
+.nav-bar .Navigation ul{
+  display: flex;
+}
+.nav-bar .Navigation ul li{
+  padding: 0 10px;
+}
+.nav-bar .Navigation ul li a, .nav-bar .Navigation ul li{
+  color: var(--var--Color-matching01);
+  font-size: 18px;
+}
+.nav-item {
+  text-decoration: none;
+  transition: .3s;
+  z-index: 1;
+  position: relative;
+}
+.nav-item .icon-enter, .nav-item .icon-login{
+  color: var(--var-Secondary-color);
+  font-size: 18px;
+}
+.nav-item:before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: var(--var-Main-color);
+  border-radius: 8px 8px 0 0;
+  opacity: 0;
+  transition: .3s;
+}
+.nav-item:hover:before{
+  opacity: 1;
+}
+.nav-item-op:hover:before{
+  opacity: 0;
+}
+/*-----------------------NAV 導覽頁 (end)-------------------------*/
+
+/*-----------------------footer ------------------------------*/
+footer{
+  width: 100%;
+}
+.footer-text {
+    background: var(--var--Color-matching04);
+    padding: 35px 15px;
+}
+.footer-text ul li{
+  padding: 10px 0; 
+}
+.footer-text ul li:hover a{
+  color: var(--var-Secondary-color01);
+}
+.footer-text ul li a{
+    color: var(--var--Color-matching06);
+}
+.footer-logo-text {
+    color: var(--var--Color-matching06);
+    padding-top: 20px;
+}
+.footer-logo-text p{padding-bottom: 15px;}
+.footer-logo-text p:last-child{padding-bottom: 0;}
+.footer-school, .footer-Elective{width: 27.5%;}
+.footer-logo{width: 65%;}
+.cycu_logo img {
+    width: 300px;
+    height: 74px;
+}
+.footer-bottom {
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+/*-----------------------footer (end)-------------------------*/
+
+/*-----------------------go-top ------------------------------*/
+.go-top {
+    position: fixed;
+    right: 10px;
+    bottom: 20em;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    padding: 1em;
+    display: none;
+    z-index: 3;
+    
+}
+.go-top i{font-size: 45px;color: #0064a9;}
+/*-----------------------go-top (end)-------------------------*/
+
+/*----------------------- banner ---------------------------------*/
+.banner{
+  position: relative;
+}
+.banner h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: var(--var--Color-matching06);
+  font-size: 45px;
+  margin: 0;
+  z-index: 1;
+}
+
+.banner img {
+    width: 100%;
+}
+/*----------------------- banner ---(end)-------------------------*/
+/*----------------------- 標題文 ----------------------------*/
+.Main-standard {
+    text-align: center;
+    margin: 30px auto;
+    width: 900px;
+}
+.Main-standard h2 {
+    font-size: 35px!important;
+    color: #000!important;
+}
+.Main-standard img {
+    width: 30px;
+}
+/*----------------------- 標題文---(end)-------------------------*/

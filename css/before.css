@@ -1,0 +1,1327 @@
+
+/*-----------------------index-圖表 -------------------------*/
+.Pie-chart {
+    padding: 5% 0!important;
+}
+.pie {
+    line-height: 1;
+    width: 40em;
+    height: 40em;
+    position: relative;
+    margin: 10px 0;
+}
+.pie-My-File img {
+    width: 60%;
+    height: 60%;
+}
+.slice {
+  position: absolute;
+  width: 48.5%;
+  height: 48.5%;
+  /* 48% is to ensure a space between the slices */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  text-align: center;
+  transition: .3s;
+}
+.slice:hover{
+  transform: scale(1.05,1.05);
+}
+.slice:nth-child(2) {
+  top: 0;
+  left: 0;
+  border-top-left-radius: 100%;
+  background: #f26e78;
+  padding: 2em 60px 0 2em;
+}
+/*border-radius: 0 50%;*/
+/* for tooltip */
+
+.slice:nth-child(3) {
+  top: 0;
+  right: 0;
+  border-top-right-radius: 100%;
+  background: #f9aa4d;
+  padding: 2em 2em 0px 63px;
+}
+
+.slice:nth-child(4) {
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 100%;
+  background: #5496c7;
+  padding: 0px 20px 4em 5em;
+}
+
+.slice:nth-child(5) {
+  bottom: 0;
+  right: 0;
+  border-bottom-right-radius: 100%;
+  background: #a1ba6f;
+  padding: 0 5em 4em 40px;
+}
+
+.slice-tip:before, .slice-tip:after {
+  content: "";
+  position: absolute;
+}
+.pie-My-File {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: var(--var--Color-matching06);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slice-inner-icon i {
+    font-size: 55px;
+}
+.slice-inner-icon h2 {
+    font-size: 25px;
+    padding: 10px 0;
+}
+.slice-inner p {
+    line-height: 16px;
+}
+/*-----------------------index-圖表 (end)-------------------------*/
+/*----------------------- 九大分類 ------------------------------*/
+.Nine-categories {
+    margin: 80px auto!important;
+    margin-top: 0!important;
+}
+.Nine-categories-text {
+    width: 33.3%;
+}
+.Nine-categories-text div {
+    background: var(--var--Color-matching03);
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.Nine-categories-text div:before {
+    content: "\f006";
+    font-family: 'fontello';
+    position: absolute;
+    right: 20px;
+    color: var(--var--Color-matching06);
+    font-size: 20px;
+    transition: .3s;
+}
+.Nine-categories-text div:hover:before{
+    right: 10px;
+}
+.Nine-categories-text div a{
+  color: var(--var--Color-matching06);
+  font-size: 18px;
+}
+
+/*----------------------- 九大分類 (end)-------------------------*/
+
+/*----------------------- 學習歷程 ------------------------------*/
+.curriculum-text {
+    width: 25%;
+    border: solid 1px #dad8d8;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+}
+.curriculum-text h3 {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    font-size: 45px;
+    width: 140px;
+    margin: 0 auto;
+}
+.color01{margin-left: 0;}
+.color04{margin-right: 0;}
+.color01 h3{color: #ffc233;}
+.color02 h3{color: #f6a9bd;}
+.color03 h3{color: #86dbd4;}
+.color04 h3{color: #95c9e1;}
+.curriculum-text ul {
+    padding: 10px;
+    margin-top: 30px;
+}
+.curriculum-text li {
+    border: solid 1px #dad8d8;
+    margin: 5px 0;
+    padding: 15px;
+    font-size: 18px;
+}
+.curriculum-text li:last-child{margin-bottom: 0;}
+.curriculum-a{
+    margin-bottom: 80px;
+    margin-top: 10px;
+}
+.curriculum-a-text a{
+  color: var(--var-Secondary-color01);
+  font-size: 20px;
+  position: relative;
+  top:-5px;
+}
+.curriculum-a-text a span{
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 3px;
+  background: var(--var-Secondary-color01);
+  transition: .3s;
+}
+.curriculum-a-text a:hover span{
+  width: 20%;
+}
+
+/*雷達圖*/
+
+.Capability-map{width: 600px!important;}
+/*----------------------- 學習歷程 (end)-------------------------*/
+
+/*----------------------- 學習足跡-列表 ------------------------------*/
+.BG{
+  background: #e8e8e842;
+  padding: 60px 0;
+}
+.W-30 {
+    width: 33.33%;
+    padding: 15px;
+}
+.activity-Learn-data{
+  background: var(--var--Color-matching06);
+  padding-top: 25px;
+  position: relative;
+}
+.activity-Learn-data:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: solid 1px #0064a9;
+  top: -8px;
+  left: -8px;
+  border-radius: 3px;
+  z-index: -1;
+}
+.Small-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.category, .date{
+    color: var(--var--Color-matching03);
+}
+.activity-Learn-Text {
+    padding: 0 20px;
+}
+.activity-Learn-Text h3 {
+    color: var(--var-Main-color);
+    font-size: 25px;
+    margin: 10px 0;
+}
+.activity-Learn-Text hr {
+    color: var(--var--Color-matching07);
+    border: solid 1px;
+    opacity: 0.5;
+    margin-bottom: 15px;
+}
+.activity-Learn-Text li{
+    color: var(--var--Color-matching01);
+    line-height: 1.5;
+    font-size: 16px;
+}
+.activity-Learn-Text li span, .Experienc-text{
+    color: var(--var--Color-matching01);
+    font-size: 16px;
+    font-weight: 700;
+}
+.img-UP {
+    border: solid 1px;
+    border-radius: 3px;
+    color: var(--var--Color-matching07);
+    margin: 10px 0;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    position: relative;
+    overflow: hidden;
+}
+.img-UP  img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+}
+.annex {
+    margin-top: 30px;
+}
+.annex p {
+    color: var(--var--Color-matching01);
+    margin-bottom: 10px;
+}
+.compiler {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 25px;
+}
+.edit {
+    background: var(--var-Main-color);
+}
+.delete {
+    background: #c1c1c1;
+}
+.edit:hover, .delete:hover{background: var(--var-Secondary-color);}
+.edit, .delete{padding: 10px;font-size: 18px;transition: .3s;}
+.edit a, .delete a{ 
+ color: var(--var--Color-matching06);
+ font-size: 18px;
+}
+.Experienc-text{
+  margin-top: 35px;
+}
+.Experienc-text-p{
+    color: var(--var--Color-matching01);
+    margin-top: 10px;
+    text-align: justify;
+}
+/*----------------------- 學習足跡-列表 (end)-------------------------*/
+
+/*----------------------- 學習足跡-新增 ------------------------------*/
+.Field, .select{padding: 10px;}
+.Edit-modification {
+    background: var(--var--Color-matching06);
+    padding-top: 25px;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0px 7px 20px #00000012;
+}
+.Edit-mod{
+  margin: 10px 25px;
+  width: 100%;
+}
+.resume-data-text p {
+    font-size: 18px;
+    color: #666;
+    padding-left: 20px;
+}
+.resume-data-text .Field p{
+  color: var(--var-Main-color);
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 0!important;
+}
+.Field h4 {
+    border-bottom: solid 1px #dedede;
+    font-size: 25px;
+    padding: 15px 5px 5px 5px;
+    width: 100%;
+    margin-top: 5px;
+    font-weight: 300;
+    color: #666;
+}
+input[type="text"] {
+    outline: none;
+    border: none;
+    border-bottom: solid 1px #dedede;
+    font-size: 20px;
+    padding: 15px 5px 5px 5px;
+    width: 100%;
+    margin-top: 5px;
+}
+/*新增小文用*/
+.Add-essay, .Add-data-text{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+.Add-essay input{
+  width: calc(100% - 40px);
+}
+.Add-essay-w input{
+  width: calc(100% - 170px);
+}
+.Add-essay-w span{
+  text-align: center;
+  font-size: 16px;
+  color: var(--var--Color-matching01);
+}
+.Add-essay span {
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--var--Color-matching01);
+}
+.Add-data-text .custom-select-wrapper {
+    width: calc(100% - 50px);
+    padding-left: 15px;
+}
+.Add-data-text span {
+    text-align: center;
+    font-size: 16px;
+    color: var(--var--Color-matching01);
+}
+.Add-delete-btn {
+    display: flex;
+    align-items: flex-end;
+}
+.Add-delete-btn a i {
+    color: #bd470a;
+    font-size: 20px;
+    padding: 0 10px;
+}
+.Add-delete-btn a i.demo-icon.icon-cancel{
+    font-size: 30px;
+    position: relative;
+    top: 6px;
+}
+/*上傳檔案//Upload Field*/
+
+.form {width: 100%;padding-top: 8px;}
+.file-upload-wrapper {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  margin-top: 15px;
+}
+.file-upload-wrapper:after {
+    content: attr(data-text);
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: var(--var--Color-matching06); */
+    display: block;
+    width: calc(100% - 0px);
+    pointer-events: none;
+    height: 40px;
+    line-height: 40px;
+    color: var(--var--Color-matching03);
+    border-bottom: solid 1px #dedede;
+}
+.file-upload-wrapper:before {
+    content: '上傳';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    height: 30px;
+    background: var(--var-Main-color);
+    color: var(--var--Color-matching06);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    pointer-events: none;
+    border-radius: 3px;
+}
+.file-upload-wrapper:hover:before {
+  background: var(--var-Secondary-color);
+}
+.file-upload-wrapper input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+/*註明*/
+.Indicate {padding: 10px;}
+.Indicate p{
+  color: var(--var--Color-matching03);
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+/*送出*/
+.but-Submit .edit, .but-Submit .delete{
+  padding: 25px 0;
+}
+/*日期*/
+.Calendar {
+    height: 60px;
+    position: relative;
+    bottom: -30px;
+    padding: 10px;
+}
+/*加標題*/
+.Field-p p, .Field p{
+    color: var(--var-Main-color);
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.Field-p {bottom: 0;}
+/*加標題*/
+.stay-list-left {
+    width: 100%;
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #dedede;
+}
+.stay-list-left form {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.sea-div {
+    width: 50%;
+    position: relative;
+    padding-left: 45px;
+    cursor: pointer;
+    position: relative;
+}
+.sea-div:first-child{
+    margin-right: 10px;
+    border-right: solid 1px #dedede;
+}
+.sea-div:before{
+    content: '\e808';
+    font-family: 'fontello';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 35px;
+    color: var(--var--Color-matching01);
+}
+.sea-div input#startDate, .sea-div input#endDate {
+    width: 100%;
+    height: 34px;
+    font-size: 16px;
+    color: #666;
+    border: none;
+    cursor: pointer;
+}
+span.ui-datepicker-append {
+    font-size: 12px;
+    color: #b3b3b3;
+    position: absolute;
+    left: 43px;
+    bottom: -7px;
+}
+.ui-widget-header .ui-icon,.ui-state-hover .ui-icon{
+    background: url("../img/ui_date_bg.png") no-repeat;
+    top: 6px;
+}
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    background: #0064a9;
+    border: none;
+}
+div#ui-datepicker-div{
+    border: none;
+    background: #fff;
+    box-shadow: 0px 1px 6px #0000005c;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+  border: none!important;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    color: #ffffff!important;
+    background: #0064a9!important;
+}
+
+/*文字框限制輸入字數*/
+.rich-editor{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding: 8px;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #dedede;
+    position: relative;
+}
+span.counter-seat {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    color: #666;
+}
+.rich-editor textarea {
+    width: 100%;
+    height: 100px;
+    outline: none;
+    border: none;
+}
+.counter-seat span {
+    color: #FF5722!important;
+}
+/*----------------------- 學習足跡-新增 (END)-------------------------*/
+
+/*----------------------- 放遠未來 -------------------------*/
+
+.Pag-job-blue {
+    border-bottom: solid 1px #ababab;
+    margin-bottom: 30px;
+}
+.Pag-job-blue ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.Pag-job-blue li{padding-bottom: 10px;margin: 0 10px;opacity: .5;}
+.Pag-job-blue li, .Pag-job-blue a{
+    width: 150px;
+    display: block;
+    text-align: center;
+    transition: .3s;
+}
+.Pag-job-blue li:hover i, .Pag-job-blue li:hover a{
+  color: var(--var-Main-color);
+}
+.Pag-job-blue i {
+    font-size: 55px;
+    color: var(--var--Color-matching01);
+}
+.Pag-job-blue a{
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--var--Color-matching01);
+  margin-top: 10px;
+  width: 80px;
+  margin: 0 auto;
+}
+.Pag-job-blue a img {
+    width: 100%;
+    height: 50px;
+}
+.Pag-job-blue li:hover a img{
+  animation: myAnimation 1s ease 0s infinite alternate;
+}
+@keyframes myAnimation
+{
+  0% { transform: rotate(-7deg);}
+  20% { transform: rotate(0deg);}
+  40% { transform: rotate(4deg);}
+  60% { transform: rotate(-7deg);}
+  80% { transform: rotate(0deg);}
+  100% { transform: rotate(4deg);}
+}
+.Pag-job-blue-color, .Pag-job-blue li:hover{
+    border-bottom: solid 3px #0064a9;
+    opacity: 1!important;
+}
+.Pag-job-blue-color i, .Pag-job-blue-color a{
+  color: var(--var-Main-color);
+}
+/*科系X職務發展*/
+.futureVacancy{padding: 15px 0;}
+.futureVacancy h3{
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--var--Color-matching05);
+  margin-bottom: 10px;
+}
+.futureVacancy li {
+    margin-right: 20px;
+    position: relative;
+}
+.futureVacancy li:before {
+    position: absolute;
+    content: '、';
+    right: -15px;
+  }
+.futureVacancy li:last-child:before{
+    position: absolute;
+    content: '';
+    right: 0;
+  }
+.futureVacancy li a{
+  color: var(--var-Secondary-color01);
+  transition: .3s;
+}
+.futureVacancy li a:hover{
+  background: var(--var-Secondary-color01);
+  color: var(--var--Color-matching06);
+}
+/*收合*/
+.future-topic {
+    padding: 25px 0;
+}
+.future-topic .Main-standard {
+    width: 100%;
+    margin: 0;
+}
+.future-topic .question {
+    text-align: center;
+    color: var(--var--Color-matching05);
+    font-size: 35px;
+    font-weight: bold;
+    padding: 15px 0 0 0;
+}
+.future-topic .faq-t{
+    top: -20px;
+    right: 40%;
+}
+.future-topic .faq-O{
+  top: 0;
+}
+/*收合內文*/
+.answer-text {
+    margin: 35px 0;
+}
+.answer-text h3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--var--Color-matching05);
+    margin-bottom: 10px;
+}
+.answer-text p, .answer-text li{
+    color: var(--var--Color-matching01);
+}
+
+/*收合表格*/
+table.answer-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+table.answer-table th {
+    font-size: 25px;
+    color: var(--var-Secondary-color01);
+}
+table.answer-table th.answer-table-color {
+    color: var(--var--Color-matching05);
+}
+table.answer-table thead tr th {
+    border-bottom: solid 2px #cecdcd;
+    padding: 10px 5px;
+}
+table.answer-table td {
+    color: var(--var--Color-matching03);
+    padding: 5px 0;
+    font-size: 16px;
+}
+/*圖表*/
+.future-chart canvas{
+  margin-bottom: 40px;
+}
+.future-chart p {
+    color: var(--var--Color-matching01);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.future-chart p span.no{
+  color: var(--var-Secondary-color01);
+  font-size: 20px;
+}
+.future-chart p span.off{
+  color: var(--var-Main-color);
+  font-size: 20px;
+}
+.future-class .answer-table  th:first-child, .future-class .answer-table  td:first-child{
+  width: 200px;
+}
+.future-class-td {
+    width: 80px;
+    height: 80px;
+    background: var(--var--color-matching06);
+    position: relative;
+    box-shadow: 0px 1px 8px #e4e3e3;
+    border-radius: 3px;
+    margin: 15px;
+}
+.future-class .answer-table td:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -1px;
+}
+.future-class-td p {
+    font-size: 14px;
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.future-class-td p  span {
+    font-size: 25px;
+    font-weight: bold;
+}
+.future-class table.answer-table td {
+    padding: 5px 15px;
+    text-align: left;
+}
+.future-class table.answer-table tbody tr{
+   border-bottom: solid 1px #cecdcd;
+}
+.future-class table.answer-table tbody tr:last-child{
+   border-bottom: none;
+}
+
+/*未來藍圖*/
+.plan {
+    padding: 30px 20px;
+    box-shadow: 0px 1px 10px #d8d5d5;
+    border-radius: 3px;
+    margin: 15px;
+}
+.plan h3 {
+    color: #666;
+    font-size: 35px;
+}
+.plan h3 span {
+    font-size: 17px;
+    font-weight: 100;
+}
+.plan h4 {
+    margin-top: 15px;
+    color: #666;
+    font-size: 20px;
+    font-weight: 100;
+}
+.plan li {
+    margin-top: 15px;
+    color: #999;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+.plan ul{
+  margin-top: 15px;
+}
+.blueprint-btn-blu {
+    padding: 30px 0 60px 0;
+}
+.plan textarea {
+    width: 100%;
+    height: 150px;
+    word-break: break-all;
+    margin-top: 15px;
+    padding: 10px;
+    outline: none;
+    overflow-x: hidden;
+    border: solid 1px #e8e8e8ba;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #666;
+}
+.plan textarea::-webkit-scrollbar {
+  width: 10px;
+  background: #eae4e4;
+}
+/* Track */
+.plan textarea::-webkit-scrollbar-track {
+-webkit-border-radius: 10px;
+border-radius: 10px;
+}
+
+/* Handle */
+.plan textarea::-webkit-scrollbar-thumb {
+-webkit-border-radius: 10px;
+border-radius: 10px;
+background: #0064a9;
+}
+/*----------------------- 放遠未來 (END)-------------------------*/
+
+/*----------------------- 個人履歷 ------------------------------*/
+.resume-Information {
+    box-shadow: 0 1px 10px #0000003b;
+    border-radius: 3px;
+    position: relative;
+    padding: 30px 0 25px 0;
+    top: -35px;
+    background: #fff;
+}
+.resume-Information-name{
+  position: absolute;
+  top: -22px;
+  left: 15px;
+}
+.resume-Information h2 {
+    color: #666;
+    font-size: 18px;
+    position: relative;
+    text-shadow: -2px -2px 2px #fff, 2px -2px 2px #fff, -1.5px -1.5px 2px #fff, 1.5px -1.5px 2px #fff, -1.5px 1.5px 2px #fff, 1.5px 1.5px 2px #fff;
+}
+.resume-Information h2 span {
+    color: #ff5722;
+    font-size: 35px;
+    text-shadow: -3px -3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff, 3px -3px 3px #fff, -3px 3px 3px #fff, 3px 3px 3px #fff;
+    letter-spacing: -1px;
+}
+.Information-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Information-button a {
+    border: solid 1px #e0e0e0;
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 3px;
+    color: #0064a9;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+.Information-button a:hover, .Information-select .custom-select-trigger:hover{
+    border: solid 1px #fff;
+    color: #fff;
+    background: #0064a9;
+    
+}
+.Information-select .custom-select-trigger:hover:after{
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.Information-select .custom-select-trigger {
+    border: solid 1px #e0e0e0;
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 3px;
+    color: #0064a9;
+    font-weight: bold;
+    line-height: 23px;
+    margin: 0;
+}
+.information {
+    position: relative;
+    padding: 10px 27px;
+    font-weight: bold;
+    border: solid 1px #e0e0e0;
+    background: rgba(255, 255, 255, 1);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    font-size: 20px;
+    border-radius: 3px;
+    color: #0064a9;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0px 12px;
+}
+.information:hover {
+    background:#0064a9;
+    color:#fff;
+}
+.information:hover:after{
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.information:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    right: 25px;
+    margin-top: -3px;
+    border-bottom: 1px solid #666;
+    border-right: 1px solid #666;
+    transform: rotate(45deg) translateY(-50%);
+    transition: all .4s ease-in-out;
+    transform-origin: 50% 0;
+
+}
+.information ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    border-radius: 2px;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    opacity: 0;
+}
+.information ul:before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -4px;
+    right: 15px;
+    width: 4px;
+    height: 4px;
+    border: solid transparent;
+    border-bottom-color: rgb(255, 255, 255);
+    border-width: 4px;
+    border-top: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    background: #fff;
+    transform: rotate(45deg);
+    transition: all .4s ease-in-out;
+}
+.information:hover > ul {
+    opacity: 1;
+    padding: 0;
+    pointer-events: auto;
+}
+.information ul li {
+    display: block;
+    float: left;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid rgba(234, 234, 234, 0.75);
+    border: 1px solid rgba(234, 234, 234, 0.75);
+}
+.information ul li a {
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    color: #666;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    border-radius: 2px;
+}
+.information ul li a:hover {
+    color:#fff;
+    background: #0064a9;
+}
+/*完成度*/
+/*.future-chart {
+    margin-bottom: 30px!important;
+}
+.ibox {
+    line-height: 20px;
+    width: calc(100% - 150px);
+    height: 40px;
+    background: #f3f3f3;
+    text-align: left;
+    margin-right: 15px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.iLoading {
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    width: 0px;
+    height: 40px;
+    background: #2dcbdf;
+    text-align: center;
+    position: absolute;
+}
+*/
+
+/**/
+.progress-out {
+    position: relative;
+    background-color: #f3f3f3;
+}
+
+.progress-in {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    border: none;
+    background-color: #2dcbdf;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+.direction-left{
+    left:0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.direction-right{
+    right:0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.percent-show {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #000;
+    text-align: center;
+    z-index: 2;
+}
+/**/
+.future-chart-text{
+  width: 150px;
+  position: absolute;
+  right: -160px;
+}
+.future-chart-text p {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+.future-chart-text-fraction {
+    font-size: 35px;
+    font-weight: bold;
+    -webkit-text-stroke: 3px #2dcbdf;
+    color: #2dcbdf;
+    padding: 0 5px;
+}
+/* 填寫資料 */
+.resume-data {
+    box-shadow: 0 1px 10px #0000003b;
+    background: #fff;
+    border-radius: 3px;
+    margin: 50px auto!important;
+    padding: 0 0 35px 0;
+    position:relative;
+}
+.resume-data-text h3 {
+    font-size: 35px;
+    font-weight: bold;
+    border-left: solid 5px #2dcbdf;
+    padding-left: 10px;
+    margin: 30px 0 10px 0;
+    color: #2dcbdf;
+}
+.resume-data-text {
+    padding: 0 35px;
+}
+.resume-data-text:first-child{padding: 0;}
+/*上傳照片*/
+.wrap-custom-file {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+.wrap-custom-file input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  overflow: hidden;
+  opacity: 0;
+}
+.wrap-custom-file label {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+  height: 180px;
+  padding: 10px 0;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0px 1px 0px 3px rgb(255, 255, 255), 0px 1px 0px 5px rgb(232, 232, 232);
+  border-radius: 50%;
+  background-image: url(../img/img01.jpg);
+  background-size: 100%;
+}
+.wrap-custom-file label span {
+  display: block;
+  color: #777;
+  transition: color 0.4s;
+}
+.wrap-custom-file label i {
+    color: #ffffff;
+    font-size: 35px;
+    background: #2dcbdf;
+    border-radius: 50%;
+    padding: 5px 8px 8px 8px;
+    position: relative;
+    right: -74px;
+    bottom: -125px;
+}
+/*刪除浮動*/
+.resume-data .date {
+    position: absolute;
+    top: 30px;
+    right: -25px;
+    background: #2dcbdf;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.resume-data .date a {
+    display: flex;
+}
+.resume-data .date a i {
+    color: #fff;
+    font-size: 35px;
+    padding: 14px 11px;
+}
+/*新增*/
+.New-education {
+    padding-bottom: 25px;
+}
+.New-education a {
+    color: #666;
+    font-size: 25px;
+    font-weight: bold;
+}
+.New-education a i {
+    color: #bd470a;
+    font-size: 25px;
+}
+
+/*關鍵字標籤*/
+
+/**/
+#myTags {
+    display: flex;
+    border: solid 1px #dedede;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+span.data {
+    display: flex;
+    align-items: center;
+}
+span.data .tag {
+    margin: 5px;
+    padding: 5px 8px;
+    background-color: #e3fcff;
+    text-align: center;
+    color: #666;
+    opacity: 1;
+    border-radius: 3px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+span.autocomplete input {
+    border: none;
+    padding: 0;
+}
+/**/
+.inputTags {
+    display: flex;
+    border: solid 1px #dedede;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.inputTags .inputTags-span {
+    display: flex;
+    margin: 5px;
+    padding: 5px 8px;
+    background-color: #e3fcff;
+    text-align: center;
+    color: #666;
+    opacity: 1;
+    border-radius: 3px;
+}
+.inputTags input.inputTags-input {
+    padding: 0;
+    margin: 5px;
+    border: none;
+    width: auto;
+}
+ul.inputTags-ul li {
+    color: #666;
+    padding-right: 15px;
+}
+
+ul.inputTags-ul {
+    display: flex;
+}
+/*自傳*/
+p.Field-textp a {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--var-Secondary-color);
+}
+
+p.Field-textp {
+    color: var(--var--Color-matching03);
+}
+/*上傳檔案//Upload Field*/
+
+.form-graphy {width: 100%;padding-top: 8px;}
+.form-graphy .file-upload-wrapper {
+  height: 40px;
+  margin: 0;
+}
+.form-graphy .file-upload-wrapper:after {
+    border: solid 1px #dedede;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.form-graphy .file-upload-wrapper:before {
+    content: '上傳檔案';
+    position: absolute;
+    top: 0;
+    right: -11px;
+    display: inline-block;
+    height: 41px;
+    background: #2dcbdf;
+    line-height: 40px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 0px;
+}
+.form-graphy .file-upload-wrapper:hover:before {
+  background: var(--var-Secondary-color);
+}
+.graphy ul {
+    display: flex;
+}
+.graphy ul li a, .graphy ul li a i {
+    color: #bd470a;
+    font-size: 25px;
+    font-weight: bold;
+}
+.graphy ul li span {
+    color: #666;
+    font-size: 16px;
+    padding-right: 10px;
+    padding-left: 15px;
+}
+.graphy ul li span:first-child{
+  padding-left: 0;
+}
+/*----------------------- 個人履歷 (END)-------------------------*/
+
+/*----------------------- 個人資料 (END)-------------------------*/
+.wrapfile-img{
+  width: 200px;
+  height: 200px;
+  padding: 10px 0;
+  background-color: #fff;
+  box-shadow: 0px 1px 0px 3px rgb(255, 255, 255), 0px 1px 0px 5px rgb(232, 232, 232);
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.wrapfile-img img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
+}
+/*----------------------- 個人資料 (END)-------------------------*/

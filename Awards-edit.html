@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中原大學My File系統</title>
+	<!-- 共用css -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- 前台css -->
+	<link rel="stylesheet" href="css/before.css">
+	<!-- 共用工具css -->
+	<link rel="stylesheet" href="css/tool.css">
+	<!-- 歸零css -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- ICON -->
+	<link rel="stylesheet" href="css/fontello-embedded.css">
+	<!-- ICON -->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css">
+	<!-- <link rel="stylesheet" href="css/date.css"> -->
+</head>
+
+<body>
+<nav>
+	<div class="nav-bar">
+		<div class="logo"><a href="index.html"><img src="img/LOGO.jpg" alt=""></a></div>
+		<div class="Navigation">
+			<ul>
+				<li><a href="studystep.html" class="nav-item">學習足跡</a></li>
+				<li><a href="jobsability.html" class="nav-item">放遠未來</a></li>
+				<li><a href="resume.html" class="nav-item"  target="_blank" >履歷X自傳</a></li>
+				<li><a href="information.html" class="nav-item">個人資訊</a></li>
+				<li><a href="https://itouch.cycu.edu.tw/index.jsp?type=student" class="nav-item">學生一網通</a></li>
+				<li><a href="https://itouch.cycu.edu.tw/index.jsp?type=student" class="nav-item"><span class="demo-icon icon-enter"></span>登出</a></li>
+				<li class="nav-item nav-item-op"><span class="demo-icon icon-login"></span>王X瑋</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- go-top -->
+<a href="#" class="go-top"><i class="demo-icon icon-top"></i></a>
+<main>
+	<!--banner-->
+	<article>
+		<section class="banner">
+			<h1>學習足跡</h1>
+			<img src="img/banner/banner-studystep.jpg" alt="">
+	    </section>
+	</article>
+    <article class="BG">
+        <!--標題文-->
+        <section>
+	    	<div class=" w1200 d-center">
+				<div class="Main-standard">
+					<h2>獲獎記錄</h2>
+					<img src="img/wire.svg" alt="">
+					<p>您大學期間於運動會或比賽中有獲得獎項者。</p>
+				</div>
+		    </div>
+		    <div class="w1200-rwd d-center Edit-modification">
+		    	<form class="Edit-mod">	
+			    	<div class="Edit-mod-div">
+			    		<div class="rwd w100">
+					    	<div class="Field col-3">
+					    		<p>*學年期</p>
+					    		<input type="text" name="email" placeholder="請輸入學年期"  required>
+					    	</div>
+					    	<div class="Field col-6">
+					    		<p>*獲獎名稱</p>
+					    		<input type="text" name="email" placeholder="請輸入獲獎名稱"  required>
+					    	</div>
+					    	<div class="Field col-3">
+					    		<p>*類別</p>
+					    		<input type="text" name="email" placeholder="請輸入類別"  required>
+					    	</div>
+					    	
+					    </div>
+					    <div class="rwd w100 m-t-10">
+					    	<div class="Field col-6">
+					    		<p>*頒獎單位</p>
+					    		<input type="text" name="email" placeholder="請輸入頒獎單位"  required>
+					    	</div>
+					        <div class="Calendar Field-p rwd col-6">
+					        	<p>*日期</p>
+					    		<div class="stay-list-left">
+						            <form>
+						                <div class="sea-div">
+						                    <label class="search-lab"></label><input  readonly  id="startDate"  required/>
+						                </div>
+						                <div class="sea-div">
+						                    <label class="search-lab"></label><input  readonly  id="endDate"  required/>
+						                </div>
+						            </form>
+						        </div>
+					    	</div>
+					    </div>
+					    <div class="rwd w100 m-t-10">
+							<div class="wrap Field col-6">
+					    	  <p>附 檔</p>
+							  <form class="form">
+							    <div class="file-upload-wrapper" data-text="選擇檔案">
+							      <input name="file-upload-field" type="file" class="file-upload-field" value="">
+							    </div>
+							  </form>
+							</div>
+							<div class="wrap Field col-6">
+					    	  <p>心 得</p>
+							  <form class="form">
+							    <div class="file-upload-wrapper" data-text="選擇檔案">
+							      <input name="file-upload-field" type="file" class="file-upload-field" value="">
+							    </div>
+							  </form>
+							</div>
+					    </div>
+					    <div class="rwd w100 m-t-10">
+					    	<div class="Field col-12">
+					    		<p>*獎項內容</p>
+					    		<div class="rich-editor">
+							    	<span class="counter-seat"><span id="counter-seat">0</span>/100字</span>
+									<textarea placeholder="請填獎項內容" onkeyup="CountWords(this,'counter-seat')"></textarea>
+								</div>
+					    	</div>
+					    </div>
+					    <div class="rwd w100 Indicate">
+					    	<p>說 明：<br><br>
+							1.圖片檔案格式限JPG.JPEG.PNG.GIF，文件檔案格式限制DOC.PDF.RAR.XLSX.PPT。<br>
+							2.檔案名稱：僅允許輸入中文、英數字，特殊符號僅開放(空白、下底線)。
+					    	</p>
+					    </div>
+				    </div>
+				    <div class="but-Submit text-center w1200-rwd">
+		        		<div class="w50 edit"><a href="#">確定</a></div>
+		        		<div class="w50 delete"><a href="#">取消</a></div>
+		        	</div>
+		        </form>
+		    </div>
+	    </section>
+	</article>
+
+
+	<footer >
+		<div class="footer-text">
+			<div class="w1200 d-center">
+				<div class="footer-school">
+					<ul>
+						<li><a href="https://www1.cycu.edu.tw/default" target="_blank">中原大學</a></li>
+						<li><a href="https://uip.cycu.edu.tw/UIPWeb/wSite/np?ctNode=22047&mp=20001&idPath=20529_22047" target="_blank">中原大學教務處學生學習發展中心</a></li>
+					</ul>
+				</div>
+				<div class="footer-Elective">
+					<ul>
+						<li><a href="http://cmap.cycu.edu.tw:8080/MyMentor/index.do" target="_blank">My mentor選課指導系統</a></li>
+						<li><a href="https://www.facebook.com/ADDxCYCU/" target="_blank">樂學園</a></li>
+					</ul>
+				</div>
+				<div class="footer-logo">
+					<div class="cycu_logo"><img src="img/cycu_logo.png" alt=""></div>
+					<div class="footer-logo-text">
+						<p>單位：中原大學教務處學生學習發展中心&nbsp;&frasl;&nbsp;32023桃園市中壢區中北路200號(維澈406)</p>
+						<p>Tel：886-3-265-9999&nbsp;&frasl;&nbsp;傳真：886-3-265-2059</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy;&nbsp;中原大學 Powered By 1111 Jobs Bank .(本網站建議使用Google Chrome瀏覽器，建議解析度為1024x768以上)</p>
+		</div>
+	</footer>
+</main>
+<script  src="js/jquery.min.js"></script>
+<script  src="js/common.js"></script>
+<!-- 日期 -->
+<script  src="js/jquery.ui.js"></script>
+<script  src="js/moment.min.js"></script>
+<script  src="js/date.js"></script>
+</body>
+</html>

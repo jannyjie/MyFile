@@ -1,0 +1,280 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "微軟正黑體", "Microsoft JhengHei"," Noto Sans CJK","Xingothic TC","Droid Sans Fallback","PingFang TC","Heiti TC","LiHei Pro","Arial","Helvetica","sans-serif","PMingLiU";
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  position: relative;
+}
+.container {
+    width: 1170px;
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+}
+.rwd{
+  display: flex;
+  flex-wrap: wrap;
+}
+.w100{
+	width: 100%;	
+}
+.d-center{
+  justify-content: center;
+  margin: 0 auto;
+}
+.d-end{
+  justify-content: end;
+  margin: 0 auto;
+}
+.d-flex-end{
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+.d-space-between{
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.d-center-a{
+  align-items: center;
+}
+.d-flex-a{
+  align-items: flex-end;
+}
+.col-1 {width: 8.3%;}
+.col-2{width: 16.6%;}
+.col-3{width: 24.9%;}
+.col-4{width: 33.2%;}
+.col-5{width: 41.5%;}
+.col-6{width: 50%;}
+.col-7{width: 58.1%;}
+.col-8{width: 66.4%;}
+.col-9{width: 74.7%;}
+.col-10{width: 83%;}
+.col-11{width: 91.3%;}
+.col-12{width: 100%;}
+.vitae{
+	padding: 90px 50px;
+    max-width: 100%;
+    position: relative;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    border: solid 8px #2dcbdf;
+}
+.mt-10{margin-top: 10px;}
+.mt-15{margin-top: 15px;}
+.mt-30{margin-top: 30px;}
+.vitae-left{
+    border-right: solid 1px #cbeff4;
+    padding-right: 15px;
+}
+
+.name-imga{
+	position: relative;
+	width: 140px;
+    height: 140px;
+}
+.name-imga:after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 140px;
+    height: 140px;
+    border: solid 1px #d7f7fb;
+    border-radius: 50%;
+    transform: scale(1.16);
+}
+.name-imga:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 140px;
+    height: 140px;
+    border: solid 1px #d7f7fb;
+    border-radius: 50%;
+    transform: scale(1.08);
+}
+.name-imgjpg {
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.name-imgjpg img {
+    width: 100%;
+}
+.name-img {
+    margin-bottom: 20px;
+}
+.name-img-text h1 {
+    font-size: 40px;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+.name-img-text h2 {
+    font-size: 16px;
+    color: #666;
+    padding: 0;
+}
+.professional-skill {
+    padding: 10px 0;
+    margin-top: 10px;
+}
+.professional-skill h3, .professional-skill-right h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #666;
+    position: relative;
+    padding-bottom: 10px;
+}
+.professional-skill h3:before, .professional-skill-right h3:before{
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 125px;
+    width: 20px;
+    height: 5px;
+    background: #2dcbdf;
+}
+.left-h3:before{
+	left: 260px!important;
+}
+.left-h3-smil:before{
+	left: 65px!important;
+}
+.professional-skill h4, .professional-skill-right h4{
+    font-size: 16px;
+    font-weight: bold;
+    color: #999;
+    padding: 5px 0;
+}
+.professional-skill h4 span, .professional-skill-right h4 span{
+    color: #666;
+    font-size: 16px;
+}
+.professional-skill p {
+    color: #333;
+}
+.professional-skill ul {
+    padding: 10px 0;
+}
+.professional-skill ul li {
+    font-size: 16px;
+    color: #666;
+    margin-left: 18px;
+    position: relative;
+    line-height: 1.5;
+}
+.professional-skill ul li:before {
+    content: "‧";
+    position: absolute;
+    top: -48px;
+    left: -21px;
+    color: #2dcbdf;
+    font-size: 70px;
+}
+/*左邊結束*/
+
+/*右邊*/
+.vitae-right{
+	padding-left: 35px;
+}
+.line-right{
+	position: relative;
+}
+.line-right:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background-image: linear-gradient(120deg, #71aaff 0%, #85d1ff 100%);
+}
+.right-time p {
+    font-size: 16px;
+    color: #666;
+    padding: 7px 0;
+}
+.right-content {
+    padding: 0 10px;
+}
+.right-content h4{
+	font-size: 24px;
+    color: #666;
+}
+.right-content span{
+	padding: 0 10px;
+    color: #999;
+    font-weight: 100;
+}
+.right-content p {
+    color: #0064a9;
+}
+.Public-wp{
+	width: 65px;
+    text-align: left;
+}
+.Public {
+    font-family: 'Anton', sans-serif;
+    color:#72adff!important;
+    font-size: 45px!important;
+    padding: 0!important;
+}
+.Public-wh4{
+	width: calc(100% - 65px);
+}
+.right-job-time {
+    position: relative;
+    text-align: right;
+        padding-right: 15px;
+}
+.right-job-p {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    color: #0064a9!important;
+}
+.job-left-w{
+	width: 85px;
+}
+.job-right-w{
+	width: calc(100% - 85px);
+}
+.right-job ul {
+    display: flex;
+    color: #666;
+    margin: 6px 0;
+}
+.right-job ul li {
+    padding-right: 10px;
+    font-size: 16px;
+}
+.right-job ul li:before {
+    content: "│";
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.right-job-text {
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    padding: 10px;
+}
+.right-job-text p{
+	color: #999;
+}
+.autobiography-Text p {
+    text-indent: 26px;
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5;
+}
+/*右邊結束*/
